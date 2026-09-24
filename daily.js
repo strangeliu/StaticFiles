@@ -304,7 +304,7 @@ definePackage({
   description: "TMDB 每日电影榜单：正在热映、热门、即将上映。",
   version: "1.0.1",
   engine: 1,
-  permissions: { network: ["http://mini.sgponte:8080"] },
+  permissions: { network: ["https://test.conflux.one"] },
   extensions: [
     listWidget("now-playing", "正在热映", "poster-grid", "now_playing", 6),
     listWidget("popular", "热门电影", "poster-ranked", "popular", 3),
