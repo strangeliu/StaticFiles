@@ -160,6 +160,16 @@ function tmdbBody(data) {
   return data;
 }
 
+function failureMessage(error, fallback) {
+  if (typeof error === "string" && error) {
+    return error;
+  }
+  if (error && typeof error.message === "string" && error.message) {
+    return error.message;
+  }
+  return fallback;
+}
+
 async function tmdbGet(ctx, path, query) {
   var res;
   try {
@@ -170,7 +180,7 @@ async function tmdbGet(ctx, path, query) {
   } catch (error) {
     throw ExtensionError({
       code: "unavailable",
-      message: (error && error.message) || "TMDB request failed",
+      message: failureMessage(error, "TMDB request failed"),
       retryable: true,
     });
   }
