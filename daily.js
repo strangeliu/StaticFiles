@@ -1,5 +1,5 @@
 var API_ORIGIN = "https://test.conflux.one";
-var API_BASE = API_ORIGIN + "/tmdb/3";
+var API_BASE = API_ORIGIN + "/pubapi/tmdb/3";
 var IMAGE_BASE = "https://image.tmdb.org/t/p/w500";
 var PROFILE_BASE = "https://image.tmdb.org/t/p/w185";
 
