@@ -1,0 +1,26 @@
+{
+  "format": 1,
+  "title": "示例扩展",
+  "description": "每日推荐与弹幕。",
+  "updated": "2026-09-28T06:00:00Z",
+  "packages": [
+    {
+      "id": "conflux.daily",
+      "title": "每日推荐",
+      "description": "TMDB 每日电影榜单：正在热映、热门、即将上映。",
+      "version": "1.0.1",
+      "engine": 1,
+      "types": ["widget", "search", "detail"],
+      "url": "https://github.com/strangeliu/StaticFiles/raw/refs/heads/master/daily.js"
+    },
+    {
+      "id": "conflux.danmu",
+      "title": "弹幕",
+      "description": "兼容标准弹幕 API 的弹幕源。在设置里填写自己的 API 地址后，到 Extensions 里启用。",
+      "version": "1.0.0",
+      "engine": 1,
+      "types": ["danmu"],
+      "url": "https://github.com/strangeliu/StaticFiles/raw/refs/heads/master/danmu.js"
+    }
+  ]
+}
