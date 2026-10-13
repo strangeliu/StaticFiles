@@ -1,14 +1,14 @@
 {
   "format": 1,
   "title": "示例扩展",
-  "description": "每日推荐与弹幕。",
-  "updated": "2026-09-28T06:00:00Z",
+  "description": "每日推荐、弹幕与时间轴。",
+  "updated": "2026-10-13T08:30:00Z",
   "packages": [
     {
       "id": "conflux.daily",
       "title": "每日推荐",
-      "description": "TMDB 每日电影榜单：正在热映、热门、即将上映。",
-      "version": "1.0.1",
+      "description": "TMDB 与 Trakt 每日推荐：正在热映、热门、今日推荐、高分、即将上映、本周热门、今日播出，以及 Trakt 期待榜、票房和本周观看。",
+      "version": "1.2.0",
       "engine": 1,
       "types": ["widget", "search", "detail"],
       "url": "https://github.com/strangeliu/StaticFiles/raw/refs/heads/master/daily.js"
@@ -21,6 +21,15 @@
       "engine": 1,
       "types": ["danmu"],
       "url": "https://github.com/strangeliu/StaticFiles/raw/refs/heads/master/danmu.js"
+    },
+    {
+      "id": "conflux.theintrodb",
+      "title": "TheIntroDB",
+      "description": "用 TheIntroDB 查询电影和剧集的片头、回顾、片尾和预告。安装后到 Extensions 里启用。",
+      "version": "1.0.0",
+      "engine": 1,
+      "types": ["timeline"],
+      "url": "https://github.com/strangeliu/StaticFiles/raw/refs/heads/master/theintrodb.js"
     }
   ]
 }
